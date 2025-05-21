@@ -1,3 +1,23 @@
+/* Animated Typing Effect */
+.typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #505355;
+    animation: typing 3.5s steps(40,end), blink-caret 0.75s step-end infinite;
+    margin: 0 auto;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #505355 }
+}
+
 /* Social Links */
 .social-links {
     display: flex;
@@ -14,7 +34,7 @@
 }
 
 .social-icon:hover {
-    color: #0066cc;
+    color: #2d3135;
 }
 
 .social-icon svg {
@@ -76,11 +96,21 @@ nav {
     font-weight: 700;
     color: #333;
     text-decoration: none;
+    display:flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 120px;
+    width: auto;
+    margin-right: 10px;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
+    font-size: 22px;
+    font-weight: 700;
 }
 
 .nav-links li {
@@ -120,13 +150,13 @@ section {
 }
 
 .section-title {
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 30px;
     text-align: center;
 }
 
 .section-tag {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 40px;
     text-align: center;
 }
